@@ -4,8 +4,8 @@ try
 {
     const int last = 111;
     const string resultFolder = "result";
-    const string template = "<img src=\"/assets/images/39-qeshm/";
-    const string template2 = ".jpg\" width=\"600\" height=\"600\" alt=\"mhkarami97\" />";
+    const string template = "<p align=\"center\"><img src=\"/assets/images/39-qeshm/";
+    const string template2 = ".jpg\" width=\"600\" height=\"600\" alt=\"mhkarami97\" /></p>";
 
     Directory.CreateDirectory(resultFolder);
     using var sw = new StreamWriter($"{resultFolder}.md");
