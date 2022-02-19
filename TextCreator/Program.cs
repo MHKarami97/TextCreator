@@ -2,10 +2,10 @@
 
 try
 {
-    const int last = 111;
+    const int last = 95;
     const string resultFolder = "result";
-    const string template = "<p align=\"center\"><img src=\"/assets/images/39-qeshm/";
-    const string template2 = ".jpg\" width=\"600\" height=\"600\" alt=\"mhkarami97\" /></p>";
+    const string template = "<p align=\"center\"><img src=\"/assets/img/36-hormuz/";
+    const string template2 = ".jpg\" width=\"600\" height=\"600\" alt=\"mhkarami97\" /></p>\n";
 
     Directory.CreateDirectory(resultFolder);
     using var sw = new StreamWriter($"{resultFolder}.md");
@@ -14,7 +14,7 @@ try
     {
         try
         {
-            sw.WriteLine(template + i.ToString("000") + template2);
+            sw.WriteLine(template + i.ToString("00") + template2);
         }
         catch (Exception e)
         {
